@@ -1,4 +1,11 @@
 # Pseudo intent:
+
+# https://scapy.net/
+use scapy
+# import re
+use RegEx.
+# "^(?:[0-9]{1,3}\.){3}[0-9]{1,3}/[0-9]*$" validation
+
 # -Wait for input
 # -IF ip_range_input is valid
 # -->TRUE
