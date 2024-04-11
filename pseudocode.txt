@@ -1,6 +1,4 @@
 # Pseudo intent:
-# -Prepare method to validate IP address range input from user
-# -REQUEST USER INPUT: IP range from user and store it in a variable (ip_range_input)
 # -Wait for input
 # -IF ip_range_input is valid
 # -->TRUE
@@ -8,10 +6,12 @@
 # -->FALSE display message explaining problem
 # ---- Display a message explaining issue.
 # ---- Return to ip_range_input user prompt
+# -Prepare method to validate IP address range input from user
+# -REQUEST USER INPUT: IP range from user and store it in a variable (ip_range_input)
 # -Use scapy to discover hosts with ARP
-# -Store scapy results into an in-memory list (discovered_hosts)
+# -Store scapy results into an in-memory list (discoveredHosts)
 # -Display summary of results (how many hosts discovered, etc)
-# -REQUEST USER INPUT: choice what to do next. (what_next)  save to file, scan again, exit.
+# -REQUEST USER INPUT: choice what to do next. (_what_next)  save to file, scan again, exit.
 # --> Save to File:
 # ---- Display message acknowledging choice
 # ---- Export discovered_hosts to a file in this directory
@@ -19,7 +19,6 @@
 # ---- Return to choice: what_next step
 # --> Scan Again:
 # ---- Display message acknowledging choice
-# ---- Clear discovered_hosts list
 # ---- Return to ip_range_input user prompt
 # --> Exit:
 # ---- Display message acknowledging choice
